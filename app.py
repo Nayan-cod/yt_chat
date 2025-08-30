@@ -9,7 +9,7 @@ from langchain_core.messages import HumanMessage
 from dotenv import load_dotenv
 
 load_dotenv()
-
+api_key = st.secrets["HUGGINGFACEHUB_API_TOKEN"]
 # Function to extract video_id from YouTube link
 def extract_video_id(url: str) -> str:
     """
